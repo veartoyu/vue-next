@@ -18,6 +18,7 @@ export type KeyToDepMap = Map<string | symbol, Dep>
 export const targetMap = new WeakMap<any, KeyToDepMap>()
 
 // WeakMaps that store {raw <-> observed} pairs.
+//123456
 const rawToReactive = new WeakMap<any, any>()
 const reactiveToRaw = new WeakMap<any, any>()
 const rawToReadonly = new WeakMap<any, any>()
