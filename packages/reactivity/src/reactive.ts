@@ -18,7 +18,7 @@ export type KeyToDepMap = Map<string | symbol, Dep>
 export const targetMap = new WeakMap<any, KeyToDepMap>()
 
 // WeakMaps that store {raw <-> observed} pairs.
-//123456
+//用于存储原始数据。被代理后数据。只读的被代理数据 等
 const rawToReactive = new WeakMap<any, any>()
 const reactiveToRaw = new WeakMap<any, any>()
 const rawToReadonly = new WeakMap<any, any>()
